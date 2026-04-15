@@ -1,0 +1,689 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Kingston Wines & Beer | Mumbai's Finest</title>
+<link rel="stylesheet" href="/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+</head>
+<body>
+
+<!-- ══════════ AGE GATE ══════════ -->
+<div id="ag">
+  <div class="ag-box">
+    <div class="ag-wine">🍷</div>
+    <h2>Welcome to Kingston</h2>
+    <p>This website is intended for adults aged 21 and over. Please confirm your age to enter Kingston Wines & Beer — Mumbai's finest wine and beer destination.</p>
+    <div class="ag-btns">
+      <button class="ag-yes" onclick="closeAG()">Yes, I'm 21+</button>
+      <button class="ag-no" onclick="window.location='https://google.com'">No, Exit</button>
+    </div>
+    <p class="ag-legal">By entering you confirm you are of legal drinking age. Drink responsibly. © Kingston Wines & Beer</p>
+  </div>
+</div>
+
+<!-- ══════════ LOADER ══════════ -->
+<div id="ld">
+  <div class="ld-ring"></div>
+  <div class="ld-name">Kingston</div>
+</div>
+
+<!-- ══════════ TOAST ══════════ -->
+<div class="toast" id="toast"><i class="fas fa-check-circle"></i><span id="toastMsg">Done!</span></div>
+
+<!-- ══════════ BACK TO TOP ══════════ -->
+<!-- <button id="btt" onclick="scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-arrow-up"></i></button> -->
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">
+      
+      <div class="logo-words">
+       <img src="./images/logo.png" alt="" srcset="">
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#cats">Categories</a></li>
+      <li><a href="#prods">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#locs">Our Stores</a></li>
+      <li><a href="#why">Why Choose Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="tel:+919136142866" class="nav-pill"><i class="fas fa-phone"></i> Call Now</a></li>
+    </ul>
+    <button class="ham" id="ham" onclick="toggleMob()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-nav" id="mobNav">
+  <a href="#hero" onclick="toggleMob()">🏠 &nbsp;Home</a>
+  <a href="#cats" onclick="toggleMob()">📂 &nbsp;Categories</a>
+  <a href="#prods" onclick="toggleMob()">🛍 &nbsp;Products</a>
+  <a href="#about" onclick="toggleMob()">ℹ️ &nbsp;About Us</a>
+  <a href="#locs" onclick="toggleMob()">📍 &nbsp;Our Stores</a>
+  <a href="#why" onclick="toggleMob()">🤔 &nbsp;Why Choose Us</a>
+  <a href="#contact" onclick="toggleMob()">📞 &nbsp;Contact</a>
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+  <div class="hero-wrap">
+    <!-- LEFT -->
+    <div>
+      <div class="hero-chip"><i class="fas fa-map-marker-alt"></i>Mumbai's Local Wine & Beer Experts</div>
+      <h1 class="hero-h1">
+        Discover the
+        <em class="block">Finest Wines</em>
+        <span class="block">&amp; Craft Beers</span>
+      </h1>
+      <p class="hero-sub">Kingston Wines &amp; Beer offers a curated selection of premium red, white, and rosé wines alongside a wide variety of domestic and international beers — paired with expert guidance.</p>
+      <div class="hero-btns">
+        <a href="#prods" class="btn-gold">Explore Collection <i class="fas fa-arrow-right"></i></a>
+        <a href="#locs" class="btn-ghost"><i class="fas fa-store"></i> Visit a Store</a>
+      </div>
+      <div class="hero-nums">
+        <div class="hero-num">
+          <div class="n" data-target="500">0</div>
+          <div class="l">Products</div>
+        </div>
+        <div class="hero-num">
+          <div class="n" data-target="3">0</div>
+          <div class="l">Locations</div>
+        </div>
+        <div class="hero-num">
+          <div class="n" data-target="50">0</div>
+          <div class="l">Global Brands</div>
+        </div>
+        <div class="hero-num">
+          <div class="n" data-target="10000">0</div>
+          <div class="l">Happy Customers</div>
+        </div>
+      </div>
+    </div>
+    <!-- RIGHT -->
+    <div class="hero-right">
+      <div class="hero-card">
+        <div class="hero-card-em"><img src="./images/2.jpg" alt="" srcset=""></div>
+       
+        <!-- floating pills -->
+        <div class="fpill fp1">
+          <div class="fpill-ico" style="background:#FEF3C7">🍷</div>
+          <div class="fpill-t"><strong>Red Wines</strong><span>100+ varieties</span></div>
+        </div>
+        <div class="fpill fp2">
+          <div class="fpill-ico" style="background:#DBEAFE">🍺</div>
+          <div class="fpill-t"><strong>Craft Beers</strong><span>200+ brands</span></div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ MARQUEE ══════════ -->
+<div class="marquee">
+  <div class="mq-track">
+    <div class="mq-item"><i class="fas fa-wine-glass-alt"></i>Red Wines</div>
+    <div class="mq-item"><i class="fas fa-wine-bottle"></i>White Wines</div>
+    <div class="mq-item"><i class="fas fa-beer"></i>Craft Beers</div>
+    <div class="mq-item"><i class="fas fa-leaf"></i>Rosé Wines</div>
+    <div class="mq-item"><i class="fas fa-star"></i>Premium Spirits</div>
+    <div class="mq-item"><i class="fas fa-globe-asia"></i>International Brands</div>
+    <div class="mq-item"><i class="fas fa-glass-cheers"></i>Domestic Favourites</div>
+    <div class="mq-item"><i class="fas fa-truck"></i>Free Home Delivery</div>
+    <div class="mq-item"><i class="fas fa-award"></i>Expert Curated</div>
+    <div class="mq-item"><i class="fas fa-map-marker-alt"></i>3 Locations in Mumbai</div>
+    <div class="mq-item"><i class="fas fa-wine-glass-alt"></i>Red Wines</div>
+    <div class="mq-item"><i class="fas fa-wine-bottle"></i>White Wines</div>
+    <div class="mq-item"><i class="fas fa-beer"></i>Craft Beers</div>
+    <div class="mq-item"><i class="fas fa-leaf"></i>Rosé Wines</div>
+    <div class="mq-item"><i class="fas fa-star"></i>Premium Spirits</div>
+    <div class="mq-item"><i class="fas fa-globe-asia"></i>International Brands</div>
+    <div class="mq-item"><i class="fas fa-glass-cheers"></i>Domestic Favourites</div>
+    <div class="mq-item"><i class="fas fa-truck"></i>Free Home Delivery</div>
+    <div class="mq-item"><i class="fas fa-award"></i>Expert Curated</div>
+    <div class="mq-item"><i class="fas fa-map-marker-alt"></i>3 Locations in Mumbai</div>
+  </div>
+</div>
+
+<!-- ══════════ CATEGORIES ══════════ -->
+<section id="cats">
+  <div class="sec-max center rv">
+    <div class="sec-eyebrow">Browse By Category</div>
+    <h2 class="sec-h2">Our Collections</h2>
+    <p class="sec-p">From Old World classics to New World discoveries — explore our expertly curated categories of wines, beers &amp; spirits.</p>
+  </div>
+  <div class="cats-grid sec-max">
+    <div class="cat rv" style="transition-delay:.04s"><div class="cat-em">🍷</div><div class="cat-n">Red Wines</div><div class="cat-c">Cabernet · Merlot · Shiraz</div></div>
+    <div class="cat rv" style="transition-delay:.08s"><div class="cat-em">🥂</div><div class="cat-n">White Wines</div><div class="cat-c">Chardonnay · Sauvignon · Riesling</div></div>
+    <div class="cat rv" style="transition-delay:.12s"><div class="cat-em">🌸</div><div class="cat-n">Rosé Wines</div><div class="cat-c">Provence · Grenache · Pinot</div></div>
+    <div class="cat rv" style="transition-delay:.16s"><div class="cat-em">🍾</div><div class="cat-n">Sparkling</div><div class="cat-c">Champagne · Prosecco · Cava</div></div>
+    <div class="cat rv" style="transition-delay:.20s"><div class="cat-em">🍺</div><div class="cat-n">Craft Beers</div><div class="cat-c">Ales · Lagers · Stouts · IPAs</div></div>
+    <div class="cat rv" style="transition-delay:.24s"><div class="cat-em">🥃</div><div class="cat-n">Spirits</div><div class="cat-c">Whiskey · Gin · Rum · Vodka</div></div>
+    <div class="cat rv" style="transition-delay:.28s"><div class="cat-em">🌍</div><div class="cat-n">International</div><div class="cat-c">France · Italy · Spain · Chile</div></div>
+    <div class="cat rv" style="transition-delay:.32s"><div class="cat-em">🇮🇳</div><div class="cat-n">Domestic</div><div class="cat-c">Sula · Grover · Kingfisher · Bira</div></div>
+  </div>
+</section>
+
+<!-- ══════════ PRODUCTS ══════════ -->
+<section id="prods">
+  <div class="prods-hdr">
+    <div class="rvl">
+      <div class="sec-eyebrow">Our Products</div>
+      <h2 class="sec-h2">Featured Selection</h2>
+    </div>
+    <div class="ftabs rvr">
+      <button class="ftab on" onclick="filter('all',this)">All</button>
+      <button class="ftab" onclick="filter('wine',this)">Wines</button>
+      <button class="ftab" onclick="filter('beer',this)">Beers</button>
+      <button class="ftab" onclick="filter('sparkling',this)">Sparkling</button>
+      <button class="ftab" onclick="filter('spirit',this)">Spirits</button>
+    </div>
+  </div>
+  <div class="prods-grid" id="pg">
+
+    <!-- 1 -->
+    <div class="pc rv" data-cat="wine">
+      <div class="pc-img" ><img src="./images/red-wine.webp" alt="" srcset="">
+        <span class="pc-badge bs">Bestseller</span>
+        <button class="pc-wish" onclick="wish(this)"><i class="far fa-heart"></i></button>
+      </div>
+      <div class="pc-body">
+        <div class="pc-name">Red Wine</div>
+        <div class="pc-origin">Rich and smooth, red wine captures the essence of elegance in every sip. 
+</div>
+        <div class="pc-stars">★★★★★ </div>
+        <div class="pc-ft">
+          <!-- <div class="pc-price">₹899</div> -->
+          <!-- <button class="pc-add" onclick="addCart()"><i class="fas fa-plus"></i></button> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="pc rv" data-cat="wine" style="transition-delay:.05s">
+      <div class="pc-img" ><img src="./images/white-wine.jpg" alt="" srcset="">
+        <span class="pc-badge nw">New</span>
+        <button class="pc-wish" onclick="wish(this)"><i class="far fa-heart"></i></button>
+      </div>
+      <div class="pc-body">
+       
+        <div class="pc-name">White Wine</div>
+        <div class="pc-origin">Light, crisp, and refreshing, white wine brings a touch of elegance to every sip. 
+</div>
+        <div class="pc-stars">★★★★★</div>
+      
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="pc rv" data-cat="beer" style="transition-delay:.10s">
+      <div class="pc-img" ><img src="./images/craft-beer.webp" alt="" srcset="">
+        <span class="pc-badge ht">Hot</span>
+        <button class="pc-wish" onclick="wish(this)"><i class="far fa-heart"></i></button>
+      </div>
+      <div class="pc-body">
+        <div class="pc-name">Craft Beer</div>
+        <div class="pc-origin">Bold, flavorful, and uniquely brewed, craft beer delivers character in every sip. </div>
+        <div class="pc-stars">★★★★★</div>
+      
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="pc rv" data-cat="sparkling" style="transition-delay:.15s">
+      <div class="pc-img"><img src="./images/sparkling-wine.webp" alt="" srcset="">
+        <span class="pc-badge" style="background:#7C3AED">Premium</span>
+        <button class="pc-wish" onclick="wish(this)"><i class="far fa-heart"></i></button>
+      </div>
+      <div class="pc-body">
+        <div class="pc-name">Sparkling Wine</div>
+        <div class="pc-origin">Elegant and effervescent, sparkling wine adds a sparkle of celebration to every sip. </div>
+        <div class="pc-stars">★★★★★</div>
+       
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="pc rv" data-cat="beer" style="transition-delay:.20s">
+      <div class="pc-img"><img src="./images/domestic-beer.jpg" alt="" srcset="">
+        <span class="pc-badge bs">Bestseller</span>
+        <button class="pc-wish" onclick="wish(this)"><i class="far fa-heart"></i></button>
+      </div>
+      <div class="pc-body">
+        <div class="pc-name">Domestic Beer</div>
+        <div class="pc-origin">Classic, smooth, and easy-drinking, domestic beer is the taste of everyday refreshment.</div>
+        <div class="pc-stars">★★★★★</div>
+        
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="pc rv" data-cat="wine" style="transition-delay:.25s">
+      <div class="pc-img" ><img src="./images/rose-wine.jpg" alt="" srcset="">
+        <span class="pc-badge sl">Sale</span>
+        <button class="pc-wish" onclick="wish(this)"><i class="far fa-heart"></i></button>
+      </div>
+      <div class="pc-body">
+        <div class="pc-name">Rose Wine</div>
+        <div class="pc-origin">Fresh, fruity, and delicately pink, rosé wine brings a perfect balance of elegance and refreshment to every sip.</div>
+        <div class="pc-stars">★★★★★ <span>(118)</span></div>
+      
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="pc rv" data-cat="beer" style="transition-delay:.30s">
+      <div class="pc-img"><img src="./images/international-beer.jpg" alt="" srcset="">
+        <span class="pc-badge im">Import</span>
+        <button class="pc-wish" onclick="wish(this)"><i class="far fa-heart"></i></button>
+      </div>
+      <div class="pc-body">
+        <div class="pc-name">International Beer</div>
+        <div class="pc-origin">Bold and diverse, international beer brings global flavors and craftsmanship to every refreshing sip.</div>
+        <div class="pc-stars">★★★★★</div>
+       
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="pc rv" data-cat="spirit" style="transition-delay:.35s">
+      <div class="pc-img" ><img src="./images/single-malt-whisky.jpg" alt="" srcset="">
+        <span class="pc-badge nw">New</span>
+        <button class="pc-wish" onclick="wish(this)"><i class="far fa-heart"></i></button>
+      </div>
+      <div class="pc-body">
+       
+        <div class="pc-name">Single Malt Whisky</div>
+        <div class="pc-origin">Rich, smooth, and deeply complex, single malt whisky offers a refined taste crafted to perfection in every sip.</div>
+        <div class="pc-stars">★★★★★ </div>
+        
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-vis rvl">
+      <div class="about-img"><img src="./images/about1.webp" alt="" srcset=""></div>
+      <div class="amc amc1"><div class="amc-n">4.9 ⭐</div><div class="amc-l">Customer Rating</div></div>
+      <div class="amc amc2"><div class="amc-n">2024</div><div class="amc-l">Est. Vile Parle</div></div>
+    </div>
+    <div class="rvr">
+      <div class="sec-eyebrow">About Kingston</div>
+      <h2 class="sec-h2">Your Neighbourhood's Wine &amp; Beer Haven</h2>
+      <p class="sec-p" style="margin-bottom:32px">Kingston Wines &amp; Beer was born from a passion for great drinks and great conversations. With convenient stores across Andheri East, Seepz, and Vile Parle — we're your go-to neighbourhood destination for quality beverages. Kingston57, our flagship in Vile Parle, opened in August 2024 and has quickly become the area's most loved wine &amp; beer shop.</p>
+      <div class="about-feats">
+        <div class="af">
+          <div class="af-i"><i class="fas fa-award"></i></div>
+          <div>
+            <strong>Expertly Curated Selection</strong>
+            <p>Hand-picked red, white, rosé &amp; sparkling wines alongside domestic and international beers — chosen for quality, taste and value.</p>
+          </div>
+        </div>
+        <div class="af">
+          <div class="af-i"><i class="fas fa-user-tie"></i></div>
+          <div>
+            <strong>Knowledgeable Staff</strong>
+            <p>Our team is always on hand to guide you to the perfect bottle for any occasion, mood, or budget — no question too big or small.</p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ LOCATIONS ══════════ -->
+<section id="locs">
+  <div class="locs-inner">
+    <div class="center rv">
+      <div class="sec-eyebrow" style="color:var(--gl);justify-content:center">Our Stores</div>
+      <h2 class="sec-h2" style="color:#fff">Find Us in Mumbai</h2>
+      <p class="sec-p" style="color:rgba(255,255,255,.5);margin:0 auto">Three convenient locations across Mumbai — each stocked with our full range of wines, beers &amp; spirits.</p>
+    </div>
+    <div class="locs-grid">
+
+      <div class="loc-card rv" style="transition-delay:.05s">
+        <span class="loc-badge flagship">⭐ Flagship Store</span>
+        <h3>Kingston57 — Vile Parle</h3>
+        <div class="loc-addr"><i class="fas fa-map-marker-alt"></i> Nehru Road, Gujrat Society Road, Park Society, Vile Parle, Mumbai — 400057</div>
+        <div class="loc-detail">
+          <div class="loc-row"><i class="fas fa-phone"></i><a href="tel:+919136142866">+91 91361 42866</a></div>
+          <div class="loc-row"><i class="fas fa-envelope"></i><a href="mailto:contact@kingstonwines.in">contact@kingstonwines.in</a></div>
+          <div class="loc-row"><i class="fas fa-clock"></i>Mon–Sun: 11:00 AM – 11:00 PM</div>
+         </div>
+      </div>
+
+      <div class="loc-card rv" style="transition-delay:.10s">
+        <span class="loc-badge">Vile Parle</span>
+        <h3>Kingston — Wines & Beer</h3>
+        <div class="loc-addr"><i class="fas fa-map-marker-alt"></i>11, Dharam Prem Apartment, Nehru Rd, near Shiv Sagar Restaurant, Vile Parle East, Mumbai — 400058</div>
+        <div class="loc-detail">
+          <div class="loc-row"><i class="fas fa-phone"></i><a href="tel:+917208688340">+91 72086 88340</a></div>
+          <div class="loc-row"><i class="fas fa-envelope"></i><a href="mailto:contact@kingstonwines.in">contact@kingstonwines.in</a></div>
+          <div class="loc-row"><i class="fas fa-clock"></i>Mon–Sun: 11:00 AM – 11:00 PM</div>
+          </div>
+      </div>
+
+      <div class="loc-card rv" style="transition-delay:.15s">
+        <span class="loc-badge">Andheri East</span>
+        <h3>Kingston — Seepz</h3>
+        <div class="loc-addr"><i class="fas fa-map-marker-alt"></i>5, Floral Deck Plaza Central, MIDC Central Road, Subhash Nagar, Andheri East, Mumbai</div>
+        <div class="loc-detail">
+          <div class="loc-row"><i class="fas fa-phone"></i><a href="tel:+919820123036">+91 98201 23036</a></div>
+          <div class="loc-row"><i class="fas fa-envelope"></i><a href="mailto:contact@kingstonwines.in">contact@kingstonwines.in</a></div>
+          <div class="loc-row"><i class="fas fa-clock"></i>Mon–Sun: 11:00 AM – 11:00 PM</div>
+          </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ WHY US ══════════ -->
+<section id="why">
+  <div class="sec-max">
+    <div class="center rv">
+      <div class="sec-eyebrow">Why Kingston</div>
+      <h2 class="sec-h2">Why Choose Us?</h2>
+      <p class="sec-p">We go beyond selling beverages — we craft experiences, build knowledge, and celebrate every occasion with you.</p>
+    </div>
+    <div class="why-grid">
+      <div class="wc rv" style="transition-delay:.05s">
+        <div class="wc-i"><i class="fas fa-star"></i></div>
+        <h3>Premium Quality</h3>
+        <p>Every product is vetted for quality, taste &amp; authenticity — from budget-friendly to ultra-premium.</p>
+      </div>
+      <div class="wc rv" style="transition-delay:.10s">
+        <div class="wc-i"><i class="fas fa-tags"></i></div>
+        <h3>Best Prices</h3>
+        <p>Competitive pricing on all categories — get more value on every bottle you buy at Kingston.</p>
+      </div>
+      <div class="wc rv" style="transition-delay:.15s">
+        <div class="wc-i"><i class="fas fa-user-friends"></i></div>
+        <h3>Expert Staff</h3>
+        <p>Our trained team helps you find the perfect wine, beer, or spirit for any occasion or budget.</p>
+      </div>
+     
+      <div class="wc rv" style="transition-delay:.25s">
+        <div class="wc-i"><i class="fas fa-globe-asia"></i></div>
+        <h3>Wide Variety</h3>
+        <p>500+ products spanning domestic and international wines, beers &amp; spirits from 50+ countries.</p>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ TESTIMONIALS ══════════ -->
+<section id="reviews">
+  <div class="sec-max">
+    <div class="center rv">
+      <div class="sec-eyebrow">Happy Customers</div>
+      <h2 class="sec-h2">What Mumbai Says</h2>
+      <p class="sec-p">Real reviews from our valued customers across Andheri, Seepz &amp; Vile Parle.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="rc rv" style="transition-delay:.05s">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-q">The Vile Parle store is fantastic! Staff helped me pick the perfect Sula Shiraz for a dinner party and it was a massive hit. Love the curated selection!</p>
+        <div class="rc-auth">
+          <div class="rc-av">AK</div>
+          <div><div class="rc-name">Ananya Kapoor</div><div class="rc-role">Wine Enthusiast · Vile Parle</div></div>
+        </div>
+      </div>
+      <div class="rc rv" style="transition-delay:.10s">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-q">Best craft beer selection in Andheri! They stock Belgian ales and IPAs I can't find anywhere else. Great prices and super friendly staff. Highly recommend!</p>
+        <div class="rc-auth">
+          <div class="rc-av">RV</div>
+          <div><div class="rc-name">Rohan Verma</div><div class="rc-role">Craft Beer Lover · Andheri East</div></div>
+        </div>
+      </div>
+      <div class="rc rv" style="transition-delay:.15s">
+        <div class="rc-stars">★★★★★</div>
+        <p class="rc-q">Ordered home delivery from Kingston57 and it was super quick! The gift wrapping was gorgeous and my wine arrived perfectly packed. Will definitely order again!</p>
+        <div class="rc-auth">
+          <div class="rc-av">PS</div>
+          <div><div class="rc-name">Priya Sharma</div><div class="rc-role">Regular Customer · Mumbai</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ NEWSLETTER ══════════ -->
+<section id="nl">
+  <div class="nl-inner rv">
+    <div class="nl-ico">📬</div>
+    <h2 class="nl-h">Stay in the Loop</h2>
+    <p class="nl-p">Subscribe for exclusive deals, new arrivals, tasting notes &amp; events — delivered straight to your inbox.</p>
+    <form class="nl-form" onsubmit="nlSubmit(event)">
+      <input type="email" class="nl-inp" placeholder="Enter your email address" required/>
+      <button type="submit" class="nl-sub">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact">
+  <div class="contact-grid">
+    <div>
+      <div class="rvl">
+        <div class="sec-eyebrow">Get In Touch</div>
+        <h2 class="sec-h2">Visit Kingston Wines &amp; Beer</h2>
+        <p class="sec-p">Walk in, browse at your leisure, and let our experts guide you to your next favourite drink. Or call us for home delivery!</p>
+      </div>
+      <div class="cinfo">
+        <div class="ci rvl" style="transition-delay:.05s">
+          <div class="ci-i"><i class="fas fa-phone"></i></div>
+          <div><strong>Call Us</strong><p><a href="tel:+917208688340">+91 72086 88340</a></p></div>
+        </div>
+        <div class="ci rvl" style="transition-delay:.10s">
+          <div class="ci-i"><i class="fas fa-envelope"></i></div>
+          <div><strong>Email Us</strong><p><a href="mailto:contact@kingstonwines.in">contact@kingstonwines.in</a></p></div>
+        </div>
+        <div class="ci rvl" style="transition-delay:.15s">
+          <div class="ci-i"><i class="fas fa-map-marker-alt"></i></div>
+          <div><strong>Flagship Store</strong><p>11,Dharam Prem Apartment, Nehru Rd, Vile Parle East,near shiv sagar resturant, Mumbai 400058</p></div>
+        </div>
+        <div class="ci rvl" style="transition-delay:.20s">
+          <div class="ci-i"><i class="fas fa-clock"></i></div>
+          <div><strong>Store Hours</strong><p>Monday – Sunday: 11:00 AM – 11:00 PM</p></div>
+        </div>
+       
+      </div>
+    </div>
+    <div class="cform rvr">
+      <h3>Send Us a Message</h3>
+      <p class="cform-sub">Have a question, special request, or want to place a bulk order? We're here to help!</p>
+      <form onsubmit="ctSubmit(event)">
+        <div class="frow">
+          <div class="fg"><label>First Name</label><input type="text" class="fc" placeholder="Rohan" required/></div>
+          <div class="fg"><label>Last Name</label><input type="text" class="fc" placeholder="Sharma" required/></div>
+        </div>
+        <div class="fg"><label>Email Address</label><input type="email" class="fc" placeholder="rohan@example.com" required/></div>
+        <div class="fg"><label>Phone Number</label><input type="tel" class="fc" placeholder="+91 XXXXXXXXX"/></div>
+        <div class="fg"><label>Message</label><textarea class="fc" placeholder="Tell us how we can help — enquiries, bulk orders, events..."></textarea></div>
+        <button type="submit" class="fsub">Send Message &nbsp;<i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="footer-top">
+    <div class="fb">
+      <a href="#hero" class="logo">
+       
+        <div class="logo-words">
+         <img src="./images/logo.png" alt="" srcset="">
+        </div>
+      </a>
+      <p class="fb-d">Your trusted neighbourhood destination for premium wines, craft beers &amp; spirits. Expert guidance, curated selection, and genuine passion — across 3 Mumbai locations.</p>
+      <div class="fb-soc">
+        <a href="https://linktr.ee/kingston_wines_beer" class="soc" target="_blank"><i class="fas fa-link"></i></a>
+        <a href="#" class="soc"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="soc"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/917208688340" class="soc" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div>
+      <div class="fc-h">Quick Links</div>
+      <ul class="fc-ul">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#cats">Categories</a></li>
+        <li><a href="#prods">Products</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#locs">Our Stores</a></li>
+        <li><a href="#offers">Offers</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="fc-h">Our Range</div>
+      <ul class="fc-ul">
+        <li><a href="#">Red Wines</a></li>
+        <li><a href="#">White Wines</a></li>
+        <li><a href="#">Rosé Wines</a></li>
+        <li><a href="#">Sparkling</a></li>
+        <li><a href="#">Craft Beers</a></li>
+        <li><a href="#">Spirits</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="fc-h">Support</div>
+      <ul class="fc-ul">
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="tel:+919136142866">Call: 91361 42866</a></li>
+        <li><a href="https://wa.me/919136142866">WhatsApp Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Gift Cards</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.07)">
+    <div class="footer-bot">
+      <p>© 2025 Kingston Wines &amp; Beer, Mumbai. All rights reserved. Drink responsibly. For 21+ only.</p>
+      <div class="footer-bot-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!--──────────────── SCRIPTS ────────────────-->
+<script>
+/* ── AGE GATE ── */
+function closeAG(){document.getElementById('ag').style.display='none'}
+
+/* ── LOADER ── */
+window.addEventListener('load',()=>{setTimeout(()=>document.getElementById('ld').classList.add('gone'),1100)})
+
+
+
+/* ── NAVBAR SCROLL ── */
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('solid',scrollY>40)
+  document.getElementById('btt').classList.toggle('show',scrollY>300)
+})
+
+/* ── MOBILE MENU ── */
+function toggleMob(){
+  document.getElementById('mobNav').classList.toggle('open')
+  document.getElementById('ham').classList.toggle('x')
+}
+
+/* ── SCROLL REVEAL ── */
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')})
+},{threshold:.11})
+document.querySelectorAll('.rv,.rvl,.rvr').forEach(el=>io.observe(el))
+
+/* ── COUNT UP ── */
+const co=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting)return
+    const el=e.target,tgt=+el.dataset.target
+    let v=0;const step=Math.ceil(tgt/70)
+    const t=setInterval(()=>{
+      v=Math.min(v+step,tgt)
+      el.textContent=tgt>=1000?Math.round(v/1000)+'K+':v+'+'
+      if(v>=tgt)clearInterval(t)
+    },18)
+    co.unobserve(el)
+  })
+},{threshold:.5})
+document.querySelectorAll('[data-target]').forEach(el=>co.observe(el))
+
+/* ── PRODUCT FILTER ── */
+function filter(cat,btn){
+  document.querySelectorAll('.ftab').forEach(t=>t.classList.remove('on'))
+  btn.classList.add('on')
+  document.querySelectorAll('.pc').forEach(c=>{
+    const show=cat==='all'||c.dataset.cat===cat
+    c.style.display=show?'block':'none'
+    if(show)c.style.animation='fadeIn .4s ease'
+  })
+}
+
+/* ── WISHLIST ── */
+function wish(btn){
+  btn.classList.toggle('liked')
+  const ic=btn.querySelector('i')
+  ic.className=btn.classList.contains('liked')?'fas fa-heart':'far fa-heart'
+  toast(btn.classList.contains('liked')?'❤️ Added to wishlist!':'Removed from wishlist')
+}
+
+/* ── ADD TO CART ── */
+function addCart(){toast('🛒 Added to your cart!')}
+
+/* ── TOAST ── */
+let ttm
+function toast(msg){
+  const t=document.getElementById('toast'),m=document.getElementById('toastMsg')
+  m.textContent=msg;t.classList.add('show')
+  clearTimeout(ttm);ttm=setTimeout(()=>t.classList.remove('show'),3000)
+}
+
+/* ── FORMS ── */
+function nlSubmit(e){e.preventDefault();toast('🎉 Subscribed successfully!');e.target.reset()}
+function ctSubmit(e){e.preventDefault();toast('✅ Message sent! We\'ll be in touch soon.');e.target.reset()}
+
+/* ── PARALLAX BLOBS ── */
+window.addEventListener('mousemove',e=>{
+  const bx=(e.clientX/innerWidth-.5)*22,by=(e.clientY/innerHeight-.5)*22
+  document.querySelectorAll('.blob').forEach((b,i)=>{
+    b.style.transform=`translate(${bx*(i+1)*.45}px,${by*(i+1)*.45}px)`
+  })
+})
+
+/* ── SMOOTH SCROLL ── */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const tgt=document.querySelector(a.getAttribute('href'))
+    if(tgt){e.preventDefault();tgt.scrollIntoView({behavior:'smooth'})}
+  })
+})
+</script>
+</body>
+</html>

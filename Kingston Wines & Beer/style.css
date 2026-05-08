@@ -26,6 +26,9 @@
   --shl:0 24px 80px rgba(0,0,0,.14);
   --tr:all .38s cubic-bezier(.4,0,.2,1);
 }
+html, body {
+  overflow-x: hidden;
+}
 html{scroll-behavior:smooth;font-size:16px}
 body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 h1,h2,h3,h4{font-family:'Cormorant Garamond',serif;line-height:1.1}
